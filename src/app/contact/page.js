@@ -1,6 +1,5 @@
+// src/app/contact/page.js
 'use client';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
 import { useState } from 'react';
 
@@ -40,7 +39,6 @@ export default function ContactPage() {
 
   return (
     <div>
-      <Navbar />
       <h1>Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
@@ -85,7 +83,6 @@ export default function ContactPage() {
         <button type="submit">Send</button>
       </form>
       {status && <p>{status}</p>}
-      <Footer />
     </div>
   );
 }
