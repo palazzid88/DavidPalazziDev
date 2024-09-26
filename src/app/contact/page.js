@@ -1,7 +1,9 @@
-// src/app/contact/page.js
 'use client';
 
 import { useState } from 'react';
+import { Container, Form, Button, Alert } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Asegúrate de que esto esté importado
+import styles from './contact.module.css'; // Importa el CSS Módulo
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -38,51 +40,62 @@ export default function ContactPage() {
   };
 
   return (
-    <div>
-      <h1>Contact Us</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
+    <Container className={styles.contactContainer}>
+      <h1 className={styles.title}>Contact Us</h1>
+      <Form onSubmit={handleSubmit} className={styles.contactForm}>
+        <Form.Group controlId="name" className={styles.formGroup}>
+          <Form.Label className={styles.label}>Name:</Form.Label>
+          <Form.Control
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className={styles.formInput}
+          />
+        </Form.Group>
 
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
+        <Form.Group controlId="email" className={styles.formGroup}>
+          <Form.Label className={styles.label}>Email:</Form.Label>
+          <Form.Control
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className={styles.formInput}
+          />
+        </Form.Group>
 
-        <label htmlFor="subject">Subject:</label>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          value={formData.subject}
-          onChange={handleChange}
-          required
-        />
+        <Form.Group controlId="subject" className={styles.formGroup}>
+          <Form.Label className={styles.label}>Subject:</Form.Label>
+          <Form.Control
+            type="text"
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+            required
+            className={styles.formInput}
+          />
+        </Form.Group>
 
-        <label htmlFor="message">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
+        <Form.Group controlId="message" className={styles.formGroup}>
+          <Form.Label className={styles.label}>Message:</Form.Label>
+          <Form.Control
+            as="textarea"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            className={styles.formTextarea}
+          />
+        </Form.Group>
 
-        <button type="submit">Send</button>
-      </form>
-      {status && <p>{status}</p>}
-    </div>
+        <Button type="submit" className={styles.submitButton} style={{ background: '#0070f3', border: 'none' }}>
+          Send
+        </Button>
+      </Form>
+      {status && <Alert className={styles.statusMessage} variant={status.includes('éxito') ? 'success' : 'danger'}>{status}</Alert>}
+    </Container>
   );
 }

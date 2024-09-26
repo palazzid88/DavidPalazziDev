@@ -1,0 +1,11 @@
+.profile-image {
+    width: 25px;
+}
+.navbarComponents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: cornflowerblue; */
+}

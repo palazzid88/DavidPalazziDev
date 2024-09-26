@@ -1,0 +1,53 @@
+.contactContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  color: var(--foreground);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.label {
+  color: var(--foreground);
+}
+
+.formInput,
+.formTextarea {
+  background: var(--background);
+  color: var(--foreground);
+  transition: border-color 0.3s;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  border-color: #005bb5; /* Cambiar al color que desees */
+  outline: none;
+}
+
+.submitButton {
+  background: #0070f3; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+}
+
+.submitButton:hover {
+  background: #005bb5; /* Color al pasar el ratón */
+}
+
+.statusMessage {
+  margin-top: 15px;
+  text-align: center;
+}
