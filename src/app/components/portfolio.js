@@ -1,13 +1,6 @@
 "use client";
 import React from 'react';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
-// Importa los componentes directamente desde react-bootstrap
-// import Card from 'react-bootstrap/Card';
-// import Button from 'react-bootstrap/Button';
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-
 import { websData } from '@/data/websData';
 
 const Portfolio = () => {
