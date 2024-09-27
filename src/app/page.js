@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Technologies from "./technologies/page";
 import styles from './page.module.css'
 import ContactPage from "./contact/page";
-import Portfolio from "./components/porfolio";
+import Portfolio from "./components/portfolio";
 
 export default function Home() {
     return (
