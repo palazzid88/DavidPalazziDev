@@ -4,8 +4,7 @@ import Navbar from "./components/Navbar";
 import Technologies from "./technologies/page";
 import styles from './page.module.css'
 import ContactPage from "./contact/page";
-import Portfolio from "./components/portfolio";
-// import Portfolio from "./components/Portfolio";
+import PortfolioPage from "./porfolio/page";
 
 export default function Home() {
     return (
@@ -25,7 +24,7 @@ export default function Home() {
           </div>
         </section>
         < Technologies />
-        < Portfolio />
+        < PortfolioPage />
         < Certifications />
         <ContactPage />
         < Footer />
