@@ -10,16 +10,16 @@ export const websData = [
         title: 'Proyecto enntrega final React.js Front-End ',
         image: 'images/webs/react.png',
         technologies: 'React, Javascript, HTML5, CSS3',
-        webLink: 'https://example5.com',
-        repoLink: 'https://github.com/usuario/repo5',
+        webLink: 'https://proyecto-react-44970.web.app/',
+        repoLink: 'https://github.com/palazzid88/proyecto-react',
         
     },
     {
         title: 'Proyecto entrega final Javascript',
         image: 'images/webs/huerta.png',
         technologies: 'HTML5, CSS3, Javascript, Bootstrap',
-        webLink: 'https://example4.com',
-        repoLink: 'https://github.com/usuario/repo4',
+        webLink: 'https://palazzid88.github.io/proyecto-JS/',
+        repoLink: 'https://github.com/palazzid88/proyecto-JS',
     },
     {
         title: 'Proyecto entrega final Revolución Digital Desarrollo Web',
@@ -46,14 +46,14 @@ export const websData = [
         title: 'Proyecto Entrega final desarrollo web',
         image: 'images/webs/guri.png',
         technologies: 'HTML5, CCS3, SASS',
-        webLink: 'https://example3.com',
+        webLink: 'https://palazzid88.github.io/transporte-El-Guri/',
         repoLink: 'https://github.com/palazzid88/transporte-El-Guri',
     },
     {
         title: 'Página web de práctica ',
         image: 'images/webs/medici.png',
         technologies: 'HTML5, CSS3, Javascript',
-        webLink: 'https://example5.com',
-        repoLink: 'https://github.com/usuario/repo5',
+        webLink: 'https://palazzid88.github.io/medici-salud/',
+        repoLink: 'https://github.com/palazzid88/medici-salud',
     }
 ]
