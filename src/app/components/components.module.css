@@ -9,3 +9,21 @@
     justify-content: space-around;
     /* background-color: cornflowerblue; */
 }
+
+.aboutMe {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 2rem;
+}
+
+.descriptionMe {
+    max-width: 600px;
+}
+
