@@ -3,6 +3,12 @@ import nodemailer from 'nodemailer';
 export async function POST(request) {
   const { name, email, subject, message } = await request.json();
 
+
+  const formData = { name, email, subject, message };
+
+  console.log('Datos del formulario:', formData);
+
+
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {

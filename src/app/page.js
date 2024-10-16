@@ -1,22 +1,27 @@
-// pages/index.js
-import Certifications from "./certifications/page";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import AboutMe from "./components/aboutMe";
-import Technologies from "./technologies/page";
-import ContactPage from "./contact/page";
-import Portfolio from "./components/Portfolio";
-
-export default function Home() {
-    return (
-        <main>
-            <Navbar />
-            <AboutMe />
-            <Technologies />
-            <Portfolio />
-            <Certifications />
-            <ContactPage />
-            <Footer />
-        </main>
-    );
+import Navbar from './components/Navbar';
+import AboutMe from './components/AboutMe';
+import Skills from './components/Skills';
+import Certifications from './components/Certifications';
+import Portfolio from './components/Portfolio';
+import Head from 'next/head';
+import Footer from './components/Footer';
+import ContactPage from './components/ContactForm';
+export default function LandingPage() {
+  return (
+    <>
+      <Head>
+        <title>Mi Landing Page - Portfolio - Desarrollador Web Full Stack </title>
+        <meta name="description" content="Landing page de un desarrollador web especializado en Javascript React.js Node.js Express.js MongoDB HTML CSS Frameworks ."></meta>
+      </Head>
+      <Navbar />
+      <main>
+        <AboutMe />
+        <Portfolio />
+        <Certifications />
+        <Skills />
+        <ContactPage />
+      </main>
+      <Footer />
+    </>
+  );
 }

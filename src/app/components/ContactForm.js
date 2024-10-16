@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { Container, Form, Button, Alert } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Asegúrate de que esto esté importado
-import styles from './contact.module.css'; // Importa el CSS Módulo
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from './contactForm.module.css'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -22,6 +22,11 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('Enviando...');
+
+
+
+console.log('Datos del formulario:', formData);
+
 
     const res = await fetch('/api/contact', {
       method: 'POST',

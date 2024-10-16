@@ -55,5 +55,12 @@ export const websData = [
         technologies: 'HTML5, CSS3, Javascript',
         webLink: 'https://palazzid88.github.io/medici-salud/',
         repoLink: 'https://github.com/palazzid88/medici-salud',
+    },
+    {
+        title: 'Trabajo Pago para empresa de aires acondicionados (con colaboradores)',
+        image: 'images/webs/vrv.png',
+        technologies: 'React.js, Javascript, Bootstrap',
+        webLink: 'https://www.buenosairesvrv.com.ar/',
+        repoLink: 'https://github.com/Ivan9912/bavrvvite',
     }
 ]
