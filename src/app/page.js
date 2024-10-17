@@ -1,11 +1,13 @@
 import Navbar from './components/Navbar';
-import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Certifications from './components/Certifications';
 import Portfolio from './components/Portfolio';
 import Head from 'next/head';
 import Footer from './components/Footer';
 import ContactPage from './components/ContactForm';
+import AboutMe from './components/aboutMe';
+import Animania from './components/Animania';
+import DescriptionMe from './components/DEscriptionMe';
 export default function LandingPage() {
   return (
     <>
@@ -15,9 +17,11 @@ export default function LandingPage() {
       </Head>
       <Navbar />
       <main>
+        <Animania />
         <AboutMe />
         <Portfolio />
         <Certifications />
+        <DescriptionMe />
         <Skills />
         <ContactPage />
       </main>

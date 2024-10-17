@@ -1,29 +1,150 @@
-.profile-image {
-    width: 25px;
-}
-.navbarComponents {
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: auto;
+  }
+
+  .sectionProfile {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  /* .descriptionMe {
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  } */
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .profileText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    color: #007bff; /* Azul de botones de Bootstrap */
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .paragraphAboutMe {
+    max-width: 400px;
+    font-size: 1.1rem;
+    color: #495057;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  /* Aplicamos la clase paragraph a los párrafos */
+  .paragraph {
+    max-width: 400px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #495057;
+
+  }
+  
+  /* Resaltando títulos de carrera en azul */
+  .paragraph strong {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Estilos para la sección de formación */
+  .descriptionMe div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .descriptionMeContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    /* background-color: cornflowerblue; */
-}
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #343a40;
+    margin: auto;
+    /* margin: auto; */
+  }
 
-.aboutMe {
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-}
+  .descriptionMeSection {
+   margin: 50px;
+   padding: 20px;
+  }
 
-.profile-image {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-right: 2rem;
-}
+  .descriptionImg {
+    max-width: 400px;
+    margin-right: 50px;
+  }
 
-.descriptionMe {
-    max-width: 600px;
-}
-
+  .descriptionParagraph {
+    max-width: 400px;
+  }
+  
+  /* .paragraph:first-child {
+    font-weight: bold;
+    color: #007bff;
+  } */
+  
+  /* Estilos responsivos */
+  @media (min-width: 768px) {
+    .aboutMe {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .profileImage {
+      width: 200px;
+      height: 200px;
+      /* margin-right: 40px; */
+    }
+  
+    .descriptionMe {
+      max-width: 600px;
+      text-align: justify;
+    }
+  
+    .title {
+      text-align: left;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .descriptionMe {
+      max-width: 700px;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  }
+  

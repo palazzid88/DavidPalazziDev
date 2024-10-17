@@ -6,11 +6,14 @@ export default function Navbar() {
   return (
     <nav>
       <div className={styles.navbarComponents}>
-        <img
-          src="images/logo.png"
+        <Image
+          src="/images/logo.png"
           alt="Profile Image"
-          className="profile-image"
-          />
+          width={60}
+          height={60}
+          >
+        </Image>
+        
         <ul style={{ display: 'flex', listStyleType: 'none', padding: 0 }}>
           <li style={{ margin: '0 15px' }}>
             <Link href="/">Home</Link>
