@@ -4,7 +4,7 @@ import styles from './certifications.module.css';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import { websData } from '@/data/websData';
 
-const Portfolio = () => {
+export default function Portfolio() {
     return (
         <Container className="my-5">
             <div>
@@ -37,5 +37,3 @@ const Portfolio = () => {
         </Container>
     );
 };
-
-export default Portfolio;

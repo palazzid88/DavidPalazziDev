@@ -6,8 +6,8 @@ import Footer from './components/Footer';
 import ContactPage from './components/ContactForm';
 import AboutMe from './components/aboutMe';
 import Animania from './components/Animania';
-import Portfolio from './components/Portfolio';
 import OtherDescription from './components/OtherDescription';
+import Portfolio from './components/Portfolio';
 export default function LandingPage() {
   return (
     <>
