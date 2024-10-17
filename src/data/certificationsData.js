@@ -3,6 +3,5 @@ export const certifications = [
     { name: 'JavaScript', src: '/images/certifications/javascript.png' },
     { name: 'React.js', src: '/images/certifications/react.png' },
     { name: 'Backend (MERN)', src: '/images/certifications/programacionBackend.png' },
-    { name: 'Desarrollo Web', src: '/images/certifications/dwebsn.png' },
-
+    { name: 'Desarrollo Web (SN)', src: '/images/certifications/dwebsn.png' },
   ];
