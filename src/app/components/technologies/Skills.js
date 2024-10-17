@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { technologiesData } from '../../data/technologiesData';
-import styles from '../technologies/technologies.module.css';
+import { technologiesData } from '../../../data/technologiesData';
+import styles from './technologies.module.css';
 
 export default function Technologies() {
   return (

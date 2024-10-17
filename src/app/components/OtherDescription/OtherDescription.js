@@ -1,4 +1,4 @@
-import styles from './components.module.css'
+import styles from './otherDescription.module.css'
 import Image from 'next/image'
 
 export default function OtherDescription() {

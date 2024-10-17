@@ -1,4 +1,4 @@
-import styles from './components.module.css';
+import styles from './aboutMe.module.css';
 
 export default function AboutMe() {
   const aboutData = {

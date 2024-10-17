@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import styles from './certifications.module.css';
+import styles from './portfolioDev.module.css';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import { websData } from '@/data/websData';
 
