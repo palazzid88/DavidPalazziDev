@@ -7,7 +7,7 @@ import ContactPage from './components/ContactForm';
 import AboutMe from './components/aboutMe';
 import Animania from './components/Animania';
 import OtherDescription from './components/OtherDescription';
-import Portfolio from './components/Portfolio';
+import PortfolioDev from './components/PortfolioDev';
 export default function LandingPage() {
   return (
     <>
@@ -19,7 +19,7 @@ export default function LandingPage() {
       <main>
         <Animania />
         <AboutMe />
-        <Portfolio />
+        <PortfolioDev />
         <Certifications />
         <OtherDescription />
         <Skills />
