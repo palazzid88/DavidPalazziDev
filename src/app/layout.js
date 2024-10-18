@@ -41,9 +41,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${darkMode ? 'dark' : ''}`}>
-        <button onClick={toggleDarkMode} className="dark-mode-toggle">
+        {/* <button onClick={toggleDarkMode} className="dark-mode-toggle">
           {darkMode ? "🌞" : "🌙"}
-        </button>
+        </button> */}
         {children}
       </body>
     </html>
