@@ -11,7 +11,7 @@ export const technologiesData = {
     { name: 'Node.js', description: 'Entorno de ejecución para JavaScript en el lado del servidor.', logo: '/images/node-logo.png' },
     { name: 'Express.js', description: 'Framework para construir aplicaciones web y APIs con Node.js.', logo: '/images/express-logo.png' },
     { name: 'MongoDB', description: 'Base de datos NoSQL orientada a documentos.', logo: '/images/mongodb-logo.png' },
-    { name: 'MySQL', description: 'Base de datos relacional de código abierto.', logo: '/images/mysql-logo.png' },
+    // { name: 'MySQL', description: 'Base de datos relacional de código abierto.', logo: '/images/mysql-logo.png' },
     { name: 'APIs REST', description: 'Interfaz de comunicación entre aplicaciones usando HTTP.', logo: '/images/api-logo.png' },
     { name: 'WebSockets', description: 'Protocolo para la comunicación bidireccional en tiempo real.', logo: '/images/websockets-logo.png' },
   ],
