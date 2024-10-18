@@ -39,8 +39,8 @@ export const websData = [
         title: 'Página web sitio Codo a Codo',
         image: 'images/webs/codo.png',
         technologies: 'HTML5, CSS3',
-        webLink: 'https://github.com/palazzid88/codo-a-codo',
-        repoLink: 'https://palazzid88.github.io/codo-a-codo/',
+        webLink: 'https://palazzid88.github.io/codo-a-codo/',
+        repoLink: 'https://github.com/palazzid88/codo-a-codo',
     },
     {
         title: 'Proyecto Entrega final desarrollo web',
