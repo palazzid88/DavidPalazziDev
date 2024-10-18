@@ -1,7 +1,8 @@
 export const certifications = [
-    { name: 'Desarrollo Web', src: '/images/certifications/desarrolloWeb.png' },
-    { name: 'JavaScript', src: '/images/certifications/javascript.png' },
-    { name: 'React.js', src: '/images/certifications/react.png' },
-    { name: 'Backend (MERN)', src: '/images/certifications/programacionBackend.png' },
-    { name: 'Desarrollo Web (SN)', src: '/images/certifications/dwebsn.png' },
+  { name: 'Full Stack (MERN)', src: '/images/certifications/fullStack.png' },
+  { name: 'Backend Express.js', src: '/images/certifications/programacionBackend.png' },
+  { name: 'React.js', src: '/images/certifications/react.png' },
+  { name: 'JavaScript', src: '/images/certifications/javascript.png' },
+  { name: 'Desarrollo Web (SN)', src: '/images/certifications/dwebsn.png' },
+  { name: 'Desarrollo Web', src: '/images/certifications/desarrolloWeb.png' },
   ];
