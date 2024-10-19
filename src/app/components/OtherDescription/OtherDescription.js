@@ -10,7 +10,7 @@ return (
     <section className={styles.descriptionMeSection}>
         <h2 className={styles.title}>Un poco más Sobre mí</h2>
         <div className={styles.descriptionMeContainer}>
-            <Image className={styles.descriptionImg} width={400} height={300} src={aboutDataDescription.image} />
+            <img className={styles.descriptionImg} src={aboutDataDescription.image} />
             <p className={styles.descriptionParagraph}>{aboutDataDescription.description}</p>
         </div>
     </section>

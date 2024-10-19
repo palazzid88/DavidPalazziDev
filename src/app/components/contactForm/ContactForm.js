@@ -4,6 +4,9 @@ import { useState } from 'react';
 import { Container, Form, Button, Alert } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './contactForm.module.css'
+import Link from 'next/link';
+import Image from 'next/image';
+
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -46,7 +49,7 @@ console.log('Datos del formulario:', formData);
 
   return (
     <Container className={styles.contactContainer}>
-      <h1 className={styles.title}>Contact Us</h1>
+      <h1 className={styles.title}>Contacto</h1>
       <Form onSubmit={handleSubmit} className={styles.contactForm}>
         <Form.Group controlId="name" className={styles.formGroup}>
           <Form.Label className={styles.label}>Name:</Form.Label>
@@ -102,5 +105,6 @@ console.log('Datos del formulario:', formData);
       </Form>
       {status && <Alert className={styles.statusMessage} variant={status.includes('éxito') ? 'success' : 'danger'}>{status}</Alert>}
     </Container>
+
   );
 }

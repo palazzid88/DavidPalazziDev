@@ -93,7 +93,6 @@
     padding: 20px;
     color: #343a40;
     margin: auto;
-    /* margin: auto; */
   }
 
   .descriptionMeSection {
@@ -102,7 +101,7 @@
   }
 
   .descriptionImg {
-    max-width: 400px;
+    max-width: 600px;
     margin: 25px;
   }
 

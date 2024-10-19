@@ -1,186 +1,86 @@
-.aboutMe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f9fa;
-    color: #343a40;
-    margin: auto;
-  }
+.sectionProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
 
-  .sectionProfile {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .profileImage {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    padding: 20px;
-    margin: 20px;
-  }
-  
-  /* .descriptionMe {
-    max-width: 800px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-  } */
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dataAndDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.data {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  max-width: 500px;
+}
+
+.aboutSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* margin-bottom: 20px; */
+}
+
+.sobreMi, .formacion {
+  width: 45%;
+}
+
+.formacion {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content:flex-end;
+  gap: 20px;
+}
+
+.downloadCV {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .profile {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
-  }
-
-  .profileText {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
-  .title {
-    color: #007bff; /* Azul de botones de Bootstrap */
-    font-size: 2rem;
-    text-align: center;
-    margin: 20px;
-  }
 
-  .paragraphAboutMe {
-    max-width: 400px;
-    font-size: 1.1rem;
-    color: #495057;
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  /* Aplicamos la clase paragraph a los párrafos */
-  .paragraph {
-    max-width: 400px;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    color: #495057;
-
-  }
-  
-  /* Resaltando títulos de carrera en azul */
-  .paragraph strong {
-    color: #007bff;
-    font-weight: bold;
-  }
-  
-  /* Estilos para la sección de formación */
-  .descriptionMe div {
-    display: flex;
+  .dataAndDescription {
     flex-direction: column;
-    gap: 10px;
-  }
-
-  .descriptionMeContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background-color: #f8f9fa;
-    padding: 20px;
-    color: #343a40;
-    margin: auto;
-    /* margin: auto; */
-  }
-
-  .descriptionMeSection {
-   margin: 50px;
-   padding: 20px;
-  }
-
-  .descriptionImg {
-    max-width: 400px;
-    margin-right: 50px;
-  }
-
-  .descriptionParagraph {
-    max-width: 400px;
-  }
-  
-  /* .paragraph:first-child {
-    font-weight: bold;
-    color: #007bff;
-  } */
-
-  .contactContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  .downloadCV {
-    font-size: 18px;
-  }
-  
-  .cvLink {
-    color: #0070f3;
-    text-decoration: none;
-  }
-  
-  .cvLink:hover {
-    text-decoration: underline;
-  }
-  
-  .whatsappLink {
-    display: flex;
     align-items: center;
   }
-  
-  .whatsappAnchor {
-    display: inline-block;
-  }
-  
-  .whatsappAnchor img {
-    width: 40px;
-    height: 40px;
-  }
-  
 
-
-  /* Estilos responsivos */
-  @media (min-width: 768px) {
-    .aboutMe {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  
-    .profileImage {
-      width: 200px;
-      height: 200px;
-      /* margin-right: 40px; */
-    }
-  
-    .descriptionMe {
-      max-width: 600px;
-      text-align: justify;
-    }
-  
-    .title {
-      text-align: left;
-    }
+  .aboutSection {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  @media (min-width: 992px) {
-    .descriptionMe {
-      max-width: 700px;
-    }
-  
-    .title {
-      font-size: 2.5rem;
-    }
-  }
-  
+}
