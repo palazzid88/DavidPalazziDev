@@ -11,30 +11,38 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const dev = "dev = () => "
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
-        <div>
+        <div className={styles.navbarInfo}>
+        <Link href="/">
           <Image
             src="/images/logo.png"
             alt="Profile Image"
             width={60}
             height={60}
           />
-          <p>
-            David Ezequiél Palazzi dev 
-          </p>
+        </Link>
+          <div className={styles.navbarTitle}>
+            <span className={styles.codeSnippet}>const</span> {dev} <span className={styles.name}> David Palazzi</span>;
+          </div>
+{/* 
+          <p className={styles.navbarP}>
+            {dev}
+          </p> */}
         </div>
 
         {/* Botón hamburguesa */}
-        <button className={styles.hamburger} onClick={toggleMenu}>
+        {/* <button className={styles.hamburger} onClick={toggleMenu}>
           <span className={`${styles.hamburgerBar} ${isOpen ? styles.hamburgerBarOpen : ''}`}></span>
           <span className={`${styles.hamburgerBar} ${isOpen ? styles.hamburgerBarOpen : ''}`}></span>
           <span className={`${styles.hamburgerBar} ${isOpen ? styles.hamburgerBarOpen : ''}`}></span>
-        </button>
+        </button> */}
 
         {/* Menú de navegación */}
-        <ul className={`${styles.navLinks} ${isOpen ? styles.navLinksActive : ''}`}>
+        {/* <ul className={`${styles.navLinks} ${isOpen ? styles.navLinksActive : ''}`}>
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -44,7 +52,7 @@ export default function Navbar() {
           <li>
             <Link href="/profile">Profile</Link>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );

@@ -1,70 +1,106 @@
 /* Estilos generales para el navbar */
 .navbar {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-  }
-  
-  .navbarContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navLinks {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Mantener oculto cuando está cerrado */
-  }
-  
-  .navLinks li {
-    margin: 0 15px;
-  }
-  
-  .navLinks a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .navLinks a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Estilos del botón hamburguesa */
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbarTitle {
+  font-family: 'Courier New', Courier, monospace; /* Estilo tipo código */
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: #ffffff; /* Cambia este color según tu diseño */
+}
+
+.codeSnippet {
+  color: #61dafb; /* Color típico de código o un color que contraste */
+  margin: 10px;
+}
+
+.name {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #f39c12; /* Puedes cambiar el color para destacar tu nombre */
+}
+
+.navbarInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.navbarP {
+  margin: 10px;
+  padding: 10px;
+  font-family: cursive;
+  color: dodgerblue;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Mantener oculto cuando está cerrado */
+}
+
+.navLinks li {
+  margin: 0 15px;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos del botón hamburguesa */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburgerBar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.hamburgerBarOpen {
+  background-color: #ff6347; /* Cambia el color al abrir (opcional) */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
   .hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .hamburgerBar {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    border-radius: 5px;
-    transition: all 0.3s;
-  }
-  
-  .hamburgerBarOpen {
-    background-color: #ff6347; /* Cambia el color al abrir (opcional) */
-  }
-  
-  /* Estilos responsivos para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .hamburger {
       display: flex;
-    }
-  
-    /* Esconde el menú inicialmente en dispositivos móviles */
-    .navLinks {
+  }
+
+  /* Esconde el menú inicialmente en dispositivos móviles */
+  .navLinks {
       position: absolute;
       top: 60px;
       right: 0;
@@ -75,16 +111,20 @@
       flex-direction: column;
       align-items: center;
       transition: max-height 0.3s ease-in-out;
-    }
-  
-    .navLinks li {
+  }
+
+  .navLinks li {
       margin: 15px 0;
-    }
-  
-    /* Muestra el menú cuando está activo */
-    .navLinksActive {
+  }
+
+  /* Muestra el menú cuando está activo */
+  .navLinksActive {
       max-height: 500px; /* Aumenta según el número de enlaces */
       overflow: visible;
-    }
   }
-  
+
+  /* Ocultar el título para pantallas pequeñas */
+  .navbarTitle {
+      display: none;
+  }
+}

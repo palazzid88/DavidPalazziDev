@@ -114,7 +114,43 @@
     font-weight: bold;
     color: #007bff;
   } */
+
+  .contactContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+  }
   
+  .downloadCV {
+    font-size: 18px;
+  }
+  
+  .cvLink {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .cvLink:hover {
+    text-decoration: underline;
+  }
+  
+  .whatsappLink {
+    display: flex;
+    align-items: center;
+  }
+  
+  .whatsappAnchor {
+    display: inline-block;
+  }
+  
+  .whatsappAnchor img {
+    width: 40px;
+    height: 40px;
+  }
+  
+
+
   /* Estilos responsivos */
   @media (min-width: 768px) {
     .aboutMe {

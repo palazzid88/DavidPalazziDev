@@ -103,11 +103,13 @@
 
   .descriptionImg {
     max-width: 400px;
-    margin-right: 50px;
+    margin: 25px;
   }
 
   .descriptionParagraph {
     max-width: 400px;
+    margin: 10px;
+    padding: 20px;
   }
   
   /* .paragraph:first-child {

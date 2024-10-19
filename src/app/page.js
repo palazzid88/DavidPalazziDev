@@ -8,6 +8,7 @@ import Animania from './components/animania/Animania';
 import OtherDescription from './components/OtherDescription/OtherDescription';
 import PortfolioDev from './components/portfolioDev/PortfolioDev';
 import Navbar from './components/navBar/Navbar';
+
 export default function LandingPage() {
   return (
     <>

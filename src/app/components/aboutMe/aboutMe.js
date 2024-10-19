@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 import styles from './aboutMe.module.css';
 
 export default function AboutMe() {
@@ -43,6 +46,26 @@ export default function AboutMe() {
                         </p>
                         </div>
                     ))}
+                    <div className={styles.contactContainer}>
+                      {/* Enlace para descargar el currículum en PDF */}
+                      <div className={styles.downloadCV}>
+                      <Link href="/files/curriculimVitaePalazziDavid.pdf" target="_blank" download>
+                        Descargar CV
+                      </Link>
+                      </div>
+
+                      {/* Enlace a WhatsApp con logo */}
+                      <div className={styles.whatsappLink}>
+                      <Link href="https://wa.me/543364309084" target="_blank">
+                        <Image
+                          src="/images/wtp.png"
+                          alt="WhatsApp"
+                          width={32}
+                          height={32}
+                        />
+                      </Link>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
