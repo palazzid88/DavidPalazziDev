@@ -10,6 +10,7 @@ export default function Footer() {
             <Image src="/images/wtp.png" alt="WhatsApp" width={32} height={32} style={{marginLeft: '10px'}} />
           </Link>
         </div>
+        <p>palazzidavid88@gmail.com</p>
         <p>Esta landing Page fue desarrollada con javascript dentro del entorno de trabajo de Next.js</p>
         <p> Desarrollador FullStack MERN.</p>
 
