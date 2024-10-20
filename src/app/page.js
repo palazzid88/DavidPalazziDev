@@ -6,8 +6,8 @@ import ContactPage from './components/contactForm/ContactForm';
 import AboutMe from './components/aboutMe/aboutMe';
 import Animania from './components/animania/Animania';
 import OtherDescription from './components/OtherDescription/OtherDescription';
-import PortfolioDev from './components/portfolioDev/PortfolioDev';
 import Navbar from './components/navBar/Navbar';
+import PortfolioDev from './components/portfolioDev/PortfolioDev';
 
 export default function LandingPage() {
   return (

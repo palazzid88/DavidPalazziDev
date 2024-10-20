@@ -1,0 +1,38 @@
+.portfolioList {
+    display: flex; /* Usar flex para el contenedor */
+    flex-wrap: wrap; /* Permitir que las tarjetas se ajusten a varias líneas */
+    justify-content: center; /* Centrar las tarjetas */
+    gap: 16px; /* Espacio entre las tarjetas */
+    margin: 20px; /* Margen del contenedor */
+  }
+  
+  /* Estilos para las tarjetas individuales */
+  .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 16px); /* Ancho para 3 tarjetas en pantalla grande */
+    padding: 16px; /* Padding interno */
+    box-sizing: border-box; /* Incluir padding y border en el tamaño total */
+    transition: transform 0.2s;
+  }
+  
+  /* Estilos en hover */
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsividad */
+  @media (max-width: 1200px) {
+    .card {
+      width: calc(50% - 16px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(100% - 16px)
+    }
+  }
+  

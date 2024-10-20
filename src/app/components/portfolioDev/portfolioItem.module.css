@@ -1,0 +1,38 @@
+.portfolioList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px;
+  }
+  
+  /* Estilos para las tarjetas individuales */
+  .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 16px);
+    padding: 16px;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+  }
+  
+  /* Estilos en hover */
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsividad */
+  @media (max-width: 1200px) {
+    .card {
+      width: calc(50% - 16px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(100% - 16px);
+    }
+  }
+  
