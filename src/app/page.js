@@ -22,7 +22,7 @@ export default function LandingPage() {
         <AboutMe />
         <PortfolioDev />
         <Certifications />
-        {/* <OtherDescription /> */}
+        <OtherDescription />
         <Skills />
         <ContactPage />
       </main>
