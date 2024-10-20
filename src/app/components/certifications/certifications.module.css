@@ -61,4 +61,8 @@
   .imageContainer {
     margin: auto;
   }
+
+  .divContainer {
+  font-size: 1.4rem;
+  }
 }

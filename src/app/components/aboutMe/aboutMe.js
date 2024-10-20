@@ -34,11 +34,11 @@ export default function AboutMe() {
           <div className={styles.data}>
             {data.map((item, index) => (
               <div key={index}>
-                <p><strong>Nombre:</strong> {item.nombre}</p>
-                <p><strong>Edad:</strong> {item.edad}</p>
-                <p><strong>Nacionalidad:</strong> {item.nacionalidad}</p>
-                <p><strong>Estado civil:</strong> {item.estado}</p>
-                <p><strong>Familia:</strong> {item.familia}</p>
+                <p><strong style={{color: ' blue'}}>Nombre:</strong> {item.nombre}</p>
+                <p><strong style={{color: ' blue'}}>Edad:</strong> {item.edad}</p>
+                <p><strong style={{color: ' blue'}}>Nacionalidad:</strong> {item.nacionalidad}</p>
+                <p><strong style={{color:'blue'}}>Estado civil:</strong> {item.estado}</p>
+                <p><strong style={{color:'blue'}}>Familia:</strong> {item.familia}</p>
               </div>
             ))}
           </div>
@@ -54,6 +54,7 @@ export default function AboutMe() {
           ))}
       </div>
           <div className={styles.description}>
+            <h2 style={{color: 'blue'}}> Full Stack Developer </h2>
             <p>{aboutData.description}</p>
           </div>
         </div>

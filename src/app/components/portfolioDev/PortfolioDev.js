@@ -9,7 +9,7 @@ export default function PortfolioDev() {
     return (
         <Container className={styles.certificationsContainer}>
             <div>
-                <h1 className={styles.divContainer}>Mi experiencia y trabajos realizados</h1>
+                <h1 className={styles.divContainer}>Mi experiencia</h1>
             </div>
             <Row>
                 {websData.map((project, index) => (
