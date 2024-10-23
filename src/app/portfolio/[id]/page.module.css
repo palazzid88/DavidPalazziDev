@@ -1,0 +1,62 @@
+/* src/app/portfolio/[id]/page.module.css */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    font-size: 2rem;
+    color: #0070f3;
+}
+
+.description {
+    width: 300px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilos para la imagen */
+.image {
+    width: 400px;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}
