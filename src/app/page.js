@@ -1,13 +1,15 @@
 import Skills from './components/technologies/Skills';
 import Certifications from './components/certifications/Certifications';
 import Head from 'next/head';
-import Footer from './components/Footer';
 import ContactPage from './components/contactForm/ContactForm';
 import AboutMe from './components/aboutMe/aboutMe';
 import Animania from './components/animania/Animania';
 import OtherDescription from './components/OtherDescription/OtherDescription';
 import Navbar from './components/navBar/Navbar';
 import PortfolioDev from './components/portfolioDev/PortfolioDev';
+import Footer from './components/footer/Footer';
+import PortfolioListContainer from './components/portfolioDev/PortfolioListContainer';
+import LandingPortfolio from './portfolio/page';
 
 export default function LandingPage() {
   return (
@@ -20,7 +22,9 @@ export default function LandingPage() {
       <main>
         <Animania />
         <AboutMe />
+        {/* <LandingPortfolio /> */}
         <PortfolioDev />
+        {/* <PortfolioListContainer /> */}
         <Certifications />
         <OtherDescription />
         <Skills />

@@ -5,7 +5,7 @@ import styles from './aboutMe.module.css';
 export default function AboutMe() {
 
   const aboutData = {
-    description: "Soy un desarrollador full stack con experiencia en JavaScript, tanto en frontend como en backend. Utilizo tecnologías como React y Next.js para crear interfaces de usuario dinámicas y atractivas, y Node.js junto con Express para desarrollar aplicaciones robustas del lado del servidor. Tengo un buen manejo en la creación y gestión de APIs RESTful, realizando operaciones CRUD conectadas a bases de datos MongoDB, lo que me permite desarrollar soluciones completas y eficientes. full stack...",
+    description: "Soy un desarrollador full stack con experiencia en JavaScript, tanto en frontend como en backend. Utilizo tecnologías como React y Next.js para crear interfaces de usuario dinámicas y atractivas, y Node.js junto con Express para desarrollar aplicaciones robustas del lado del servidor. Tengo un buen manejo en la creación y gestión de APIs RESTfull, realizando operaciones CRUD conectadas a bases de datos MongoDB, lo que me permite desarrollar soluciones completas y eficientes. full stack...",
     img: "/images/profile-img.jpg"
   };
 

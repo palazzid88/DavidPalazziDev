@@ -1,0 +1,53 @@
+/* Estilo general del footer */
+.footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 30px 0;
+    border-top: 3px solid #61dafb;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 100px;
+  }
+  
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footerText {
+    margin: 10px 0;
+    color: #61dafb;
+  }
+  
+  .footerLink {
+    color: #34eb83;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footerLink:hover {
+    color: #61dafb;
+  }
+  
+  .footerIcon {
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footerIcon:hover {
+    transform: scale(1.2);
+  }
+  
+  .footerCopyright {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .footerNote {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #34eb83;
+  }
+  

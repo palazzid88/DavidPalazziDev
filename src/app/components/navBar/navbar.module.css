@@ -1,130 +1,120 @@
 /* Estilos generales para el navbar */
 .navbar {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
+  background-color: #1e1e1e; /* Similar al fondo de un editor de código */
+  color: #fff;
+  padding: 15px 30px;
+  border-bottom: 3px solid #61dafb; /* Línea inferior que recuerda al cursor de una terminal */
 }
 
 .navbarTitle {
-  font-family: 'Courier New', Courier, monospace; /* Estilo tipo código */
+  font-family: 'Courier New', Courier, monospace; /* Estilo de código */
   font-size: 18px;
   display: flex;
   align-items: center;
-  color: #ffffff; /* Cambia este color según tu diseño */
+  color: #61dafb; /* Azul típico de los entornos de desarrollo modernos */
 }
 
 .codeSnippet {
-  color: #61dafb; /* Color típico de código o un color que contraste */
+  color: #34eb83; /* Verde típico de consolas */
   margin: 10px;
 }
 
 .name {
   margin-left: 10px;
   font-weight: bold;
-  color: #f39c12; /* Puedes cambiar el color para destacar tu nombre */
+  color: #f39c12; /* Color destacado para tu nombre */
 }
 
 .navbarInfo {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-.navbarP {
-  margin: 10px;
-  padding: 10px;
-  font-family: cursive;
-  color: dodgerblue;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .navbarContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
+.navbarDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo para los enlaces del navbar */
 .navLinks {
   display: flex;
-  list-style: none;
+  list-style: none; /* Sin viñetas */
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Mantener oculto cuando está cerrado */
 }
 
 .navLinks li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 .navLinks a {
-  color: white;
+  position: relative;
+  color: #61dafb;
+  font-family: 'Courier New', Courier, monospace; /* Letra de consola */
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid transparent; /* Efecto de borde solo al hover */
+  transition: all 0.3s ease-in-out;
 }
 
 .navLinks a:hover {
-  text-decoration: underline;
+  border-color: #61dafb;
+  background-color: #282c34; /* Fondo similar a un IDE */
+  color: #34eb83; /* Cambia a verde consola */
+  box-shadow: 0px 0px 10px rgba(97, 218, 251, 0.7); /* Sombra sutil azul */
 }
 
-/* Estilos del botón hamburguesa */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 30px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
+.navLinks a::before {
+  content: "< ";
+  color: #34eb83; /* Parte de efecto código, abrir etiqueta */
+  transition: color 0.3s ease-in-out;
 }
 
-.hamburgerBar {
-  width: 100%;
-  height: 3px;
-  background-color: white;
-  border-radius: 5px;
-  transition: all 0.3s;
+.navLinks a::after {
+  content: " />";
+  color: #34eb83; /* Parte de efecto código, cerrar etiqueta */
+  transition: color 0.3s ease-in-out;
 }
 
-.hamburgerBarOpen {
-  background-color: #ff6347; /* Cambia el color al abrir (opcional) */
+.navLinks a:hover::before,
+.navLinks a:hover::after {
+  color: #61dafb; /* Cambia el color del efecto de código al hover */
 }
 
 /* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 768px) {
-  .hamburger {
-      display: flex;
-  }
+.navbarInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  /* Esconde el menú inicialmente en dispositivos móviles */
-  .navLinks {
-      position: absolute;
-      top: 60px;
-      right: 0;
-      width: 100%;
-      max-height: 0;
-      overflow: hidden;
-      background-color: #333;
-      flex-direction: column;
-      align-items: center;
-      transition: max-height 0.3s ease-in-out;
-  }
-
-  .navLinks li {
-      margin: 15px 0;
-  }
-
-  /* Muestra el menú cuando está activo */
-  .navLinksActive {
-      max-height: 500px; /* Aumenta según el número de enlaces */
-      overflow: visible;
-  }
-
-  /* Ocultar el título para pantallas pequeñas */
   .navbarTitle {
-    font-size: 11px;
+    font-size: 11px; /* Ajuste de tamaño para pantallas pequeñas */
+  }
+
+  .navLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navLinks li {
+    margin: 10px 0;
+  }
+
+  .navLinks a {
+    font-size: 8px;
   }
 }

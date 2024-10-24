@@ -1,43 +1,52 @@
-.certificationsContainer {
-  padding: 20px;
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: Arial, sans-serif;
-}
-
-.divContainer {
-  background-color: #0059b3;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 10px;
-  position: relative;
-  z-index: 10;
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 50px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  height: 100%;
-}
-
-.diplomaImage {
-  object-fit: cover;
+/* Estilos para el contenedor con fondo de imagen */
+.container {
+  background-image: url('/images/background1.png'); /* Ruta de la imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
   width: 100%;
-  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Responsividad */
+/* Estilos para el contenedor del h2 y la imagen con el degradado */
+.contentWrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)); /* Degradado con transparencia */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;  /* Ajusta esto si es necesario */
+  max-width: 600px; /* Por ejemplo, puedes ajustar el ancho máximo */
+  margin: auto;  /* Centrar el contenedor */
 
+}
+
+/* Estilos para el h2 y la imagen dentro del content-wrapper */
+.title {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 500px; /* Ajusta el tamaño de la imagen según sea necesario */
+  border-radius: 10px;
+  margin-top: 20px;
+}
 
 @media (max-width: 768px) {
-  .card {
-      width: 100%
-  }
+.image {
+  width: 290px;
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.contentWrapper {
+padding: 0px;
+}
+
 }
