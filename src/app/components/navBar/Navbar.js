@@ -35,10 +35,10 @@ export default function Navbar() {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="/contact">Contact</Link>
+                  <Link href="/contact">Contacto</Link>
                 </li>
                 <li>
-                  <Link href="/profile">Profile</Link>
+                  <Link href="/portfolio">Portfolio</Link>
                 </li>
               </ul>
             </div>
