@@ -10,6 +10,7 @@ import Footer from './components/footer/Footer';
 import Navbar from './components/navBar/Navbar';
 import styles from './page.module.css';
 import Technologies from './components/technologies/Skills';
+import TecnologiesDev from './components/technologies/technologiesDev';
 
 
 export default function LandingPage() {
@@ -27,8 +28,9 @@ export default function LandingPage() {
         <div className={styles.containerInfo}>
               <PortfolioDev />
               <CertificationsDev />
+              <TecnologiesDev />
         </div>
-        <Technologies />
+        {/* <Technologies /> */}
         <ContactPage />
       </main>
       <Footer />

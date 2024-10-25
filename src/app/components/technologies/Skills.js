@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { technologiesData } from '../../../data/technologiesData';
-import styles from './technologies.module.css';
+import styles from './skills.module.css';
 
-export default function Technologies() {
+export default function Skills() {
   return (
     <div className={styles.technologiesContainer}>
       <h1 className={styles.mainTitle}>Mis Tecnologías</h1>
