@@ -1,0 +1,32 @@
+.certificationsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    font-size: 2rem;
+    color: #0070f3;
+}
+
+.certificationImage {
+    width: 800px;
+    margin: auto;
+    padding: 40px;
+}
+
+.downloadButton {
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+.certificationImage {
+    width: 300px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+}

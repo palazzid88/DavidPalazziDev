@@ -9,7 +9,7 @@ const PortfolioListContainer = () => {
 
   return (
     <div className={styles.certificationsContainer}>
-      <h1 className={styles.divContainer}>Mi experiencia y trabajos realizados</h1>
+      <h1 className={styles.divContainer}>Mi experiencia</h1>
       <PortfolioList projects={websData} />
     </div>
   );

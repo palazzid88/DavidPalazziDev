@@ -35,6 +35,16 @@
   margin: 30px;
 }
 
+.containerInfo {
+  background-image: url('/images/purple.svg');
+  background-size:cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Modo Oscuro */
 @media (prefers-color-scheme: dark) {
   .page {
@@ -47,8 +57,8 @@
   }
 
   .main {
-    background-color: #121212; /* Fondo oscuro */
-    color: #ffffff; /* Texto claro */
+    background-color: #121212;
+    color: #ffffff;
   }
 
   .logo {

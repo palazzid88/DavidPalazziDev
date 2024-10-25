@@ -41,7 +41,7 @@ console.log('Datos del formulario:', formData);
 
     if (res.ok) {
       setStatus('Mensaje enviado con éxito!');
-      setFormData({ name: '', email: '', subject: '', message: '' }); // Resetear formulario
+      setFormData({ name: '', email: '', subject: '', message: '' });
     } else {
       setStatus('Error al enviar el mensaje');
     }
@@ -105,6 +105,5 @@ console.log('Datos del formulario:', formData);
       </Form>
       {status && <Alert className={styles.statusMessage} variant={status.includes('éxito') ? 'success' : 'danger'}>{status}</Alert>}
     </Container>
-
   );
 }

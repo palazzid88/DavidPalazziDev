@@ -6,7 +6,6 @@
     margin: 20px;
   }
   
-  /* Estilos para las tarjetas individuales */
   .card {
     background-color: white;
     border: 1px solid #ddd;
@@ -18,12 +17,10 @@
     transition: transform 0.2s;
   }
   
-  /* Estilos en hover */
   .card:hover {
     transform: scale(1.05);
   }
   
-  /* Responsividad */
   @media (max-width: 1200px) {
     .card {
       width: calc(50% - 16px);

@@ -1,28 +1,27 @@
-/* Estilos generales para el navbar */
 .navbar {
-  background-color: #1e1e1e; /* Similar al fondo de un editor de código */
+  background-color: #1e1e1e;
   color: #fff;
   padding: 15px 30px;
-  border-bottom: 3px solid #61dafb; /* Línea inferior que recuerda al cursor de una terminal */
+  border-bottom: 3px solid #61dafb; 
 }
 
 .navbarTitle {
-  font-family: 'Courier New', Courier, monospace; /* Estilo de código */
+  font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
   display: flex;
   align-items: center;
-  color: #61dafb; /* Azul típico de los entornos de desarrollo modernos */
+  color: #61dafb;
 }
 
 .codeSnippet {
-  color: #34eb83; /* Verde típico de consolas */
+  color: #34eb83;
   margin: 10px;
 }
 
 .name {
   margin-left: 10px;
   font-weight: bold;
-  color: #f39c12; /* Color destacado para tu nombre */
+  color: #f39c12;
 }
 
 .navbarInfo {
@@ -46,10 +45,9 @@
   flex-direction: column;
 }
 
-/* Estilo para los enlaces del navbar */
 .navLinks {
   display: flex;
-  list-style: none; /* Sin viñetas */
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -61,39 +59,38 @@
 .navLinks a {
   position: relative;
   color: #61dafb;
-  font-family: 'Courier New', Courier, monospace; /* Letra de consola */
+  font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
   font-size: 16px;
   padding: 10px 20px;
-  border: 1px solid transparent; /* Efecto de borde solo al hover */
+  border: 1px solid transparent;
   transition: all 0.3s ease-in-out;
 }
 
 .navLinks a:hover {
   border-color: #61dafb;
-  background-color: #282c34; /* Fondo similar a un IDE */
-  color: #34eb83; /* Cambia a verde consola */
-  box-shadow: 0px 0px 10px rgba(97, 218, 251, 0.7); /* Sombra sutil azul */
+  background-color: #282c34;
+  color: #34eb83;
+  box-shadow: 0px 0px 10px rgba(97, 218, 251, 0.7);
 }
 
 .navLinks a::before {
   content: "< ";
-  color: #34eb83; /* Parte de efecto código, abrir etiqueta */
+  color: #34eb83;
   transition: color 0.3s ease-in-out;
 }
 
 .navLinks a::after {
   content: " />";
-  color: #34eb83; /* Parte de efecto código, cerrar etiqueta */
+  color: #34eb83;
   transition: color 0.3s ease-in-out;
 }
 
 .navLinks a:hover::before,
 .navLinks a:hover::after {
-  color: #61dafb; /* Cambia el color del efecto de código al hover */
+  color: #61dafb;
 }
 
-/* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 768px) {
 .navbarInfo {
   display: flex;
@@ -102,7 +99,7 @@
 }
 
   .navbarTitle {
-    font-size: 11px; /* Ajuste de tamaño para pantallas pequeñas */
+    font-size: 11px;
   }
 
   .navLinks {
@@ -115,6 +112,6 @@
   }
 
   .navLinks a {
-    font-size: 8px;
+    font-size: 10px;
   }
 }

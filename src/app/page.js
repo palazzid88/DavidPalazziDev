@@ -1,33 +1,34 @@
-import Skills from './components/technologies/Skills';
-import Certifications from './components/certifications/Certifications';
 import Head from 'next/head';
-import ContactPage from './components/contactForm/ContactForm';
-import AboutMe from './components/aboutMe/aboutMe';
+import { Row, Col, Container } from 'react-bootstrap';
 import Animania from './components/animania/Animania';
-import OtherDescription from './components/OtherDescription/OtherDescription';
-import Navbar from './components/navBar/Navbar';
+import AboutMe from './components/aboutMe/aboutMe';
 import PortfolioDev from './components/portfolioDev/PortfolioDev';
+import CertificationsDev from './components/certifications/CertificationsDev';
+import OtherDescription from './components/OtherDescription/OtherDescription';
+import ContactPage from './components/contactForm/ContactForm';
 import Footer from './components/footer/Footer';
-import PortfolioListContainer from './components/portfolioDev/PortfolioListContainer';
-import LandingPortfolio from './portfolio/page';
+import Navbar from './components/navBar/Navbar';
+import styles from './page.module.css';
+import Technologies from './components/technologies/Skills';
+
 
 export default function LandingPage() {
   return (
     <>
-      <Head>
-        <title>Mi Landing Page - Portfolio - Desarrollador Web Full Stack </title>
-        <meta name="description" content="Landing page de un desarrollador web especializado en Javascript React.js Node.js Express.js MongoDB HTML CSS Frameworks ."></meta>
+      <Head >
+        <title>Mi Landing Page - Portfolio - Desarrollador Web Full Stack</title>
+        <meta name="description" content="Landing page de un desarrollador web especializado en Javascript React.js Node.js Express.js MongoDB HTML CSS Frameworks."></meta>
       </Head>
       <Navbar />
       <main>
         <Animania />
         <AboutMe />
-        {/* <LandingPortfolio /> */}
-        <PortfolioDev />
-        {/* <PortfolioListContainer /> */}
-        <Certifications />
-        <OtherDescription />
-        <Skills />
+        
+        <div className={styles.containerInfo}>
+              <PortfolioDev />
+              <CertificationsDev />
+        </div>
+        <Technologies />
         <ContactPage />
       </main>
       <Footer />

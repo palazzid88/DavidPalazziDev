@@ -7,9 +7,6 @@ const PortfolioList = ({ projects }) => {
   return (
     <>
         <Container className={styles.certificationsContainer}>
-            <div>
-                <h1 className={styles.divContainer}>Mi experiencia</h1>
-            </div>
             <Row>
                 {projects.map((project, index) => (
                     <Col key={index} xs={12} sm={6} md={4} className="mb-4">

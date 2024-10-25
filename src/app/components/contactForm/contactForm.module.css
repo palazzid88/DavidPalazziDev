@@ -35,17 +35,17 @@
 
 .formInput:focus,
 .formTextarea:focus {
-  border-color: #005bb5; /* Cambiar al color que desees */
+  border-color: #005bb5;
   outline: none;
 }
 
 .submitButton {
-  background: #0070f3; /* Color de fondo del botón */
-  color: #ffffff; /* Color del texto del botón */
+  background: #0070f3;
+  color: #ffffff;
 }
 
 .submitButton:hover {
-  background: #005bb5; /* Color al pasar el ratón */
+  background: #005bb5;
 }
 
 .statusMessage {

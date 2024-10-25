@@ -1,8 +1,9 @@
+
 .container {
   max-width: 1000px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
- background-color: #714ed1;
- display: flex;
+  background-color: #714ed1;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
@@ -12,21 +13,22 @@
   border-radius: 2%;
 }
 
-.portfolioInfo {
+.certificationsInfo {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: flex-start;
   padding: 20px;
 }
+
 .contentWrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
-  padding: 20px;
+  padding: 60px;
   border-radius: 10px;
   text-align: center;
   position: relative;
   z-index: 2;
-  width: 100%;
+  width: 100%; 
   max-width: 600px;
   margin: auto;
 
@@ -45,7 +47,7 @@
 @media (max-width: 768px) {
 .image {
   width: 290px;
-
+  padding: 20px;
 }
 
 .contentWrapper {

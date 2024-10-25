@@ -7,7 +7,6 @@ const Animania = () => {
   const [animationData, setAnimationData] = useState(null);
 
   useEffect(() => {
-    // Cargar el archivo JSON desde /public/animations/
     const fetchAnimationData = async () => {
       try {
         const response = await fetch('/animations/QGoo1FD07t.json');
@@ -30,7 +29,7 @@ const Animania = () => {
         autoplay: true,
         animationData: animationData,
       });
-      return () => anim.destroy(); // Limpia la animación cuando el componente se desmonta
+      return () => anim.destroy();
     }
   }, [animationData]);
 

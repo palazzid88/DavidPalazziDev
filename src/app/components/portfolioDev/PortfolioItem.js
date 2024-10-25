@@ -19,13 +19,11 @@ const PortfolioItem = ({ project }) => {
                 <Card.Text>
                     Tecnologías: {project.technologies}
                 </Card.Text>
-                
-                    {/* Aquí agregamos el botón dentro del Link */}
-                    <Link key={project.id} href={`/portfolio/${project.id}`} passHref>
-                        <Button variant="info">
-                            Ver Detalles
-                        </Button>
-                    </Link>
+            <Link key={project.id} href={`/portfolio/${project.id}`} passHref>
+                <Button variant="info">
+                    Ver Detalles
+                </Button>
+            </Link>
             </Card.Body>
         </Card>
     );
